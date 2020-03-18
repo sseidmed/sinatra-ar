@@ -1,0 +1,8 @@
+<ul>
+    <% @users.each do |e| %>
+    <li><%= e.id.to_s + " " + e.name + " " + e.email %></li>
+    <% end %>
+</ul>
+
+<a href="/new">Add new user</a><br>
+<a href="/remove">Delete a user</a>
